@@ -1,0 +1,495 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Corporative Bullshit Generator</title>
+    <meta name="description" content="Corporative Bullshit Generator">
+    <meta name="og:title" property="og:title" content="Create bullshit phrases">
+    <meta name="author" content="RBOliveira">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="overlay-opener" class="triangle-left">
+        <span>Vocabulary</span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mx-auto title">
+                    <h1>Corporative Bullshit Generator</h1>
+                </div>
+            </div>
+            <div class="col-12">
+                <img class="logo-img" src="imgs/bull_logo.png" alt="bullshit-generator">
+            </div>
+            <div class="col-12">
+                <div class="mx-auto subtitle">
+                    Catch phrases to be used in your next email or meeting.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="catch_phrase" class="mx-auto">
+                    <span id="adverb"></span>
+                    <span id="verb"></span>
+                    <span id="adjective"></span>
+                    <span id="noun"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="button_area" class="mx-auto">
+                    <button type="button" class="btn btn-default btn-circle btn-xl" onclick="buzzword();">Generate!
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 helper-text">
+				You can <span class="keyword">lock</span> different parts of the catch phrase by <span class="keyword">clicking</span> on it
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="row">
+		<div id="foot_note_left"  class="col-md-6 col-12">
+			<a href="mailto:r.b.oliveira@outlook.pt?subject=Bullshit generator Contact/Ideas">Contact / Ideas</a>
+		</div>
+		<div id="foot_note_right" class="col-md-6 col-12">Based on <a href="https://www.atrixnet.com/bs-generator.html">atrixnet bs-generator</a></div>
+		
+	</div>
+	<div id="overlay">
+		<i id="overlay-close-icon" class="fas fa-times"></i>
+		<div class="row">
+			<div class="col-12 main-title">
+				Vocabulary used
+			</div>
+			<div class="col-12 main-description">
+				Feel free to contact to add new vocabulary
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-sm-6 col-lg-3">
+				<div class="title">
+					ADVERBS
+				</div>
+				<div class="overlay-text">appropriately</div>
+				<div class="overlay-text">assertively</div>
+				<div class="overlay-text">authoritatively</div>
+				<div class="overlay-text">collaboratively</div>
+				<div class="overlay-text">compellingly</div>
+				<div class="overlay-text">competently</div>
+				<div class="overlay-text">completely</div>
+				<div class="overlay-text">continually</div>
+				<div class="overlay-text">conveniently</div>
+				<div class="overlay-text">credibly</div>
+				<div class="overlay-text">distinctively</div>
+				<div class="overlay-text">dramatically</div>
+				<div class="overlay-text">dynamically</div>
+				<div class="overlay-text">efficiently</div>
+				<div class="overlay-text">energistically</div>
+				<div class="overlay-text">enthusiastically</div>
+				<div class="overlay-text">globally</div>
+				<div class="overlay-text">holisticly</div>
+				<div class="overlay-text">interactively</div>
+				<div class="overlay-text">intrinsically</div>
+				<div class="overlay-text">monotonectally</div>
+				<div class="overlay-text">objectively</div>
+				<div class="overlay-text">phosfluorescently</div>
+				<div class="overlay-text">proactively</div>
+				<div class="overlay-text">professionally</div>
+				<div class="overlay-text">progressively</div>
+				<div class="overlay-text">quickly</div>
+				<div class="overlay-text">rapidiously</div>
+				<div class="overlay-text">seamlessly</div>
+				<div class="overlay-text">synergistically</div>
+				<div class="overlay-text">uniquely</div>
+				<div class="overlay-text">fungibly</div>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<div class="title">
+					VERBS
+				</div>
+				<div class="overlay-text">actualize</div>
+				<div class="overlay-text">administrate</div>
+				<div class="overlay-text">aggregate</div>
+				<div class="overlay-text">architect</div>
+				<div class="overlay-text">benchmark</div>
+				<div class="overlay-text">brand</div>
+				<div class="overlay-text">build</div>
+				<div class="overlay-text">communicate</div>
+				<div class="overlay-text">conceptualize</div>
+				<div class="overlay-text">coordinate</div>
+				<div class="overlay-text">create</div>
+				<div class="overlay-text">cultivate</div>
+				<div class="overlay-text">customize</div>
+				<div class="overlay-text">deliver</div>
+				<div class="overlay-text">deploy</div>
+				<div class="overlay-text">develop</div>
+				<div class="overlay-text">disintermediate</div>
+				<div class="overlay-text">disseminate</div>
+				<div class="overlay-text">drive</div>
+				<div class="overlay-text">embrace</div>
+				<div class="overlay-text">e-enable</div>
+				<div class="overlay-text">empower</div>
+				<div class="overlay-text">enable</div>
+				<div class="overlay-text">engage</div>
+				<div class="overlay-text">engineer</div>
+				<div class="overlay-text">enhance</div>
+				<div class="overlay-text">envisioneer</div>
+				<div class="overlay-text">evisculate</div>
+				<div class="overlay-text">evolve</div>
+				<div class="overlay-text">expedite</div>
+				<div class="overlay-text">exploit</div>
+				<div class="overlay-text">extend</div>
+				<div class="overlay-text">fabricate</div>
+				<div class="overlay-text">facilitate</div>
+				<div class="overlay-text">fashion</div>
+				<div class="overlay-text">formulate</div>
+				<div class="overlay-text">foster</div>
+				<div class="overlay-text">generate</div>
+				<div class="overlay-text">grow</div>
+				<div class="overlay-text">harness</div>
+				<div class="overlay-text">impact</div>
+				<div class="overlay-text">implement</div>
+				<div class="overlay-text">incentivize</div>
+				<div class="overlay-text">incubate</div>
+				<div class="overlay-text">initiate</div>
+				<div class="overlay-text">innovate</div>
+				<div class="overlay-text">integrate</div>
+				<div class="overlay-text">iterate</div>
+				<div class="overlay-text">leverage existing</div>
+				<div class="overlay-text">leverage other's</div>
+				<div class="overlay-text">maintain</div>
+				<div class="overlay-text">matrix</div>
+				<div class="overlay-text">maximize</div>
+				<div class="overlay-text">mesh</div>
+				<div class="overlay-text">monetize</div>
+				<div class="overlay-text">morph</div>
+				<div class="overlay-text">myocardinate</div>
+				<div class="overlay-text">negotiate</div>
+				<div class="overlay-text">network</div>
+				<div class="overlay-text">optimize</div>
+				<div class="overlay-text">orchestrate</div>
+				<div class="overlay-text">parallel task</div>
+				<div class="overlay-text">plagiarize</div>
+				<div class="overlay-text">pontificate</div>
+				<div class="overlay-text">predominate</div>
+				<div class="overlay-text">procrastinate</div>
+				<div class="overlay-text">productivate</div>
+				<div class="overlay-text">productize</div>
+				<div class="overlay-text">promote</div>
+				<div class="overlay-text">provide access to</div>
+				<div class="overlay-text">pursue</div>
+				<div class="overlay-text">recaptiualize</div>
+				<div class="overlay-text">reconceptualize</div>
+				<div class="overlay-text">redefine</div>
+				<div class="overlay-text">re-engineer</div>
+				<div class="overlay-text">reintermediate</div>
+				<div class="overlay-text">reinvent</div>
+				<div class="overlay-text">repurpose</div>
+				<div class="overlay-text">restore</div>
+				<div class="overlay-text">revolutionize</div>
+				<div class="overlay-text">scale</div>
+				<div class="overlay-text">seize</div>
+				<div class="overlay-text">simplify</div>
+				<div class="overlay-text">strategize</div>
+				<div class="overlay-text">streamline</div>
+				<div class="overlay-text">supply</div>
+				<div class="overlay-text">syndicate</div>
+				<div class="overlay-text">synergize</div>
+				<div class="overlay-text">synthesize</div>
+				<div class="overlay-text">target</div>
+				<div class="overlay-text">transform</div>
+				<div class="overlay-text">transition</div>
+				<div class="overlay-text">underwhelm</div>
+				<div class="overlay-text">unleash</div>
+				<div class="overlay-text">utilize</div>
+				<div class="overlay-text">visualize</div>
+				<div class="overlay-text">whiteboard</div>
+				<div class="overlay-text">cloudify</div>
+				<div class="overlay-text">right-shore</div>
+				<div class="overlay-text">incept</div>
+				<div class="overlay-text">onboard</div>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<div class="title">
+					ADJECTIVES
+				</div>
+				<div class="overlay-text">24/7</div>
+				<div class="overlay-text">24/365</div>
+				<div class="overlay-text">accurate</div>
+				<div class="overlay-text">adaptive</div>
+				<div class="overlay-text">alternative</div>
+				<div class="overlay-text">an expanded array of</div>
+				<div class="overlay-text">B2B</div>
+				<div class="overlay-text">B2C</div>
+				<div class="overlay-text">backend</div>
+				<div class="overlay-text">backward-compatible</div>
+				<div class="overlay-text">best-of-breed</div>
+				<div class="overlay-text">bleeding-edge</div>
+				<div class="overlay-text">bricks-and-clicks</div>
+				<div class="overlay-text">business</div>
+				<div class="overlay-text">clicks-and-mortar</div>
+				<div class="overlay-text">client-based</div>
+				<div class="overlay-text">client-centered</div>
+				<div class="overlay-text">client-centric</div>
+				<div class="overlay-text">client-focused</div>
+				<div class="overlay-text">collaborative</div>
+				<div class="overlay-text">compelling</div>
+				<div class="overlay-text">competitive</div>
+				<div class="overlay-text">cooperative</div>
+				<div class="overlay-text">corporate</div>
+				<div class="overlay-text">cost effective</div>
+				<div class="overlay-text">covalent</div>
+				<div class="overlay-text">cross functional</div>
+				<div class="overlay-text">cross-media</div>
+				<div class="overlay-text">cross-platform</div>
+				<div class="overlay-text">cross-unit</div>
+				<div class="overlay-text">customer directed</div>
+				<div class="overlay-text">customized</div>
+				<div class="overlay-text">cutting-edge</div>
+				<div class="overlay-text">distinctive</div>
+				<div class="overlay-text">distributed</div>
+				<div class="overlay-text">diverse</div>
+				<div class="overlay-text">dynamic</div>
+				<div class="overlay-text">e-business</div>
+				<div class="overlay-text">economically sound</div>
+				<div class="overlay-text">effective</div>
+				<div class="overlay-text">efficient</div>
+				<div class="overlay-text">emerging</div>
+				<div class="overlay-text">empowered</div>
+				<div class="overlay-text">enabled</div>
+				<div class="overlay-text">end-to-end</div>
+				<div class="overlay-text">enterprise</div>
+				<div class="overlay-text">enterprise-wide</div>
+				<div class="overlay-text">equity invested</div>
+				<div class="overlay-text">error-free</div>
+				<div class="overlay-text">ethical</div>
+				<div class="overlay-text">excellent</div>
+				<div class="overlay-text">exceptional</div>
+				<div class="overlay-text">extensible</div>
+				<div class="overlay-text">extensive</div>
+				<div class="overlay-text">flexible</div>
+				<div class="overlay-text">focused</div>
+				<div class="overlay-text">frictionless</div>
+				<div class="overlay-text">front-end</div>
+				<div class="overlay-text">fully researched</div>
+				<div class="overlay-text">fully tested</div>
+				<div class="overlay-text">functional</div>
+				<div class="overlay-text">functionalized</div>
+				<div class="overlay-text">future-proof</div>
+				<div class="overlay-text">global</div>
+				<div class="overlay-text">go forward</div>
+				<div class="overlay-text">goal-oriented</div>
+				<div class="overlay-text">granular</div>
+				<div class="overlay-text">high standards in</div>
+				<div class="overlay-text">high-payoff</div>
+				<div class="overlay-text">high-quality</div>
+				<div class="overlay-text">highly efficient</div>
+				<div class="overlay-text">holistic</div>
+				<div class="overlay-text">impactful</div>
+				<div class="overlay-text">inexpensive</div>
+				<div class="overlay-text">innovative</div>
+				<div class="overlay-text">installed base</div>
+				<div class="overlay-text">integrated</div>
+				<div class="overlay-text">interactive</div>
+				<div class="overlay-text">interdependent</div>
+				<div class="overlay-text">intermandated</div>
+				<div class="overlay-text">interoperable</div>
+				<div class="overlay-text">intuitive</div>
+				<div class="overlay-text">just in time</div>
+				<div class="overlay-text">leading-edge</div>
+				<div class="overlay-text">leveraged</div>
+				<div class="overlay-text">long-term high-impact</div>
+				<div class="overlay-text">low-risk high-yield</div>
+				<div class="overlay-text">magnetic</div>
+				<div class="overlay-text">maintainable</div>
+				<div class="overlay-text">market positioning</div>
+				<div class="overlay-text">market-driven</div>
+				<div class="overlay-text">mission-critical</div>
+				<div class="overlay-text">multidisciplinary</div>
+				<div class="overlay-text">multifunctional</div>
+				<div class="overlay-text">multimedia based</div>
+				<div class="overlay-text">next-generation</div>
+				<div class="overlay-text">one-to-one</div>
+				<div class="overlay-text">open-source</div>
+				<div class="overlay-text">optimal</div>
+				<div class="overlay-text">orthogonal</div>
+				<div class="overlay-text">out-of-the-box</div>
+				<div class="overlay-text">pandemic</div>
+				<div class="overlay-text">parallel</div>
+				<div class="overlay-text">performance based</div>
+				<div class="overlay-text">plug-and-play</div>
+				<div class="overlay-text">premier</div>
+				<div class="overlay-text">premium</div>
+				<div class="overlay-text">principle-centered</div>
+				<div class="overlay-text">proactive</div>
+				<div class="overlay-text">process-centric</div>
+				<div class="overlay-text">professional</div>
+				<div class="overlay-text">progressive</div>
+				<div class="overlay-text">prospective</div>
+				<div class="overlay-text">quality</div>
+				<div class="overlay-text">real-time</div>
+				<div class="overlay-text">reliable</div>
+				<div class="overlay-text">resource-sucking</div>
+				<div class="overlay-text">resource-maximizing</div>
+				<div class="overlay-text">resource-leveling</div>
+				<div class="overlay-text">revolutionary</div>
+				<div class="overlay-text">robust</div>
+				<div class="overlay-text">scalable</div>
+				<div class="overlay-text">seamless</div>
+				<div class="overlay-text">stand-alone</div>
+				<div class="overlay-text">standardized</div>
+				<div class="overlay-text">standards compliant</div>
+				<div class="overlay-text">state of the art</div>
+				<div class="overlay-text">sticky</div>
+				<div class="overlay-text">strategic</div>
+				<div class="overlay-text">superior</div>
+				<div class="overlay-text">sustainable</div>
+				<div class="overlay-text">synergistic</div>
+				<div class="overlay-text">tactical</div>
+				<div class="overlay-text">team building</div>
+				<div class="overlay-text">team driven</div>
+				<div class="overlay-text">technically sound</div>
+				<div class="overlay-text">timely</div>
+				<div class="overlay-text">top-line</div>
+				<div class="overlay-text">transparent</div>
+				<div class="overlay-text">turnkey</div>
+				<div class="overlay-text">ubiquitous</div>
+				<div class="overlay-text">unique</div>
+				<div class="overlay-text">user-centric</div>
+				<div class="overlay-text">user friendly</div>
+				<div class="overlay-text">value-added</div>
+				<div class="overlay-text">vertical</div>
+				<div class="overlay-text">viral</div>
+				<div class="overlay-text">virtual</div>
+				<div class="overlay-text">visionary</div>
+				<div class="overlay-text">web-enabled</div>
+				<div class="overlay-text">wireless</div>
+				<div class="overlay-text">world-class</div>
+				<div class="overlay-text">worldwide</div>
+				<div class="overlay-text">fungible</div>
+				<div class="overlay-text">cloud-ready</div>
+				<div class="overlay-text">elastic</div>
+				<div class="overlay-text">hyper-scale</div>
+				<div class="overlay-text">on-demand</div>
+				<div class="overlay-text">cloud-based</div>
+				<div class="overlay-text">cloud-centric</div>
+				<div class="overlay-text">cloudified</div>
+				<div class="overlay-text">agile</div>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<div class="title">
+					NOUNS
+				</div>
+				<div class="overlay-text">action items</div>
+				<div class="overlay-text">alignments</div>
+				<div class="overlay-text">applications</div>
+				<div class="overlay-text">architectures</div>
+				<div class="overlay-text">bandwidth</div>
+				<div class="overlay-text">benefits</div>
+				<div class="overlay-text">best practices</div>
+				<div class="overlay-text">catalysts for change</div>
+				<div class="overlay-text">channels</div>
+				<div class="overlay-text">collaboration and idea-sharing</div>
+				<div class="overlay-text">communities</div>
+				<div class="overlay-text">content</div>
+				<div class="overlay-text">convergence</div>
+				<div class="overlay-text">core competencies</div>
+				<div class="overlay-text">customer service</div>
+				<div class="overlay-text">data</div>
+				<div class="overlay-text">deliverables</div>
+				<div class="overlay-text">e-business</div>
+				<div class="overlay-text">e-commerce</div>
+				<div class="overlay-text">e-markets</div>
+				<div class="overlay-text">e-tailers</div>
+				<div class="overlay-text">e-services</div>
+				<div class="overlay-text">experiences</div>
+				<div class="overlay-text">expertise</div>
+				<div class="overlay-text">functionalities</div>
+				<div class="overlay-text">growth strategies</div>
+				<div class="overlay-text">human capital</div>
+				<div class="overlay-text">ideas</div>
+				<div class="overlay-text">imperatives</div>
+				<div class="overlay-text">infomediaries</div>
+				<div class="overlay-text">information</div>
+				<div class="overlay-text">infrastructures</div>
+				<div class="overlay-text">initiatives</div>
+				<div class="overlay-text">innovation</div>
+				<div class="overlay-text">intellectual capital</div>
+				<div class="overlay-text">interfaces</div>
+				<div class="overlay-text">internal or "organic" sources</div>
+				<div class="overlay-text">leadership</div>
+				<div class="overlay-text">leadership skills</div>
+				<div class="overlay-text">manufactured products</div>
+				<div class="overlay-text">markets</div>
+				<div class="overlay-text">materials</div>
+				<div class="overlay-text">meta-services</div>
+				<div class="overlay-text">methodologies</div>
+				<div class="overlay-text">methods of empowerment</div>
+				<div class="overlay-text">metrics</div>
+				<div class="overlay-text">mindshare</div>
+				<div class="overlay-text">models</div>
+				<div class="overlay-text">networks</div>
+				<div class="overlay-text">niches</div>
+				<div class="overlay-text">niche markets</div>
+				<div class="overlay-text">opportunities</div>
+				<div class="overlay-text">"outside the box" thinking</div>
+				<div class="overlay-text">outsourcing</div>
+				<div class="overlay-text">paradigms</div>
+				<div class="overlay-text">partnerships</div>
+				<div class="overlay-text">platforms</div>
+				<div class="overlay-text">portals</div>
+				<div class="overlay-text">potentialities</div>
+				<div class="overlay-text">process improvements</div>
+				<div class="overlay-text">processes</div>
+				<div class="overlay-text">products</div>
+				<div class="overlay-text">quality vectors</div>
+				<div class="overlay-text">relationships</div>
+				<div class="overlay-text">resources</div>
+				<div class="overlay-text">results</div>
+				<div class="overlay-text">ROI</div>
+				<div class="overlay-text">scenarios</div>
+				<div class="overlay-text">schemas</div>
+				<div class="overlay-text">services</div>
+				<div class="overlay-text">solutions</div>
+				<div class="overlay-text">sources</div>
+				<div class="overlay-text">strategic theme areas</div>
+				<div class="overlay-text">supply chains</div>
+				<div class="overlay-text">synergy</div>
+				<div class="overlay-text">systems</div>
+				<div class="overlay-text">technologies</div>
+				<div class="overlay-text">technology</div>
+				<div class="overlay-text">testing procedures</div>
+				<div class="overlay-text">total linkage</div>
+				<div class="overlay-text">users</div>
+				<div class="overlay-text">value</div>
+				<div class="overlay-text">vortals</div>
+				<div class="overlay-text">web-readiness</div>
+				<div class="overlay-text">web services</div>
+				<div class="overlay-text">fungibility</div>
+				<div class="overlay-text">clouds</div>
+				<div class="overlay-text">nosql</div>
+				<div class="overlay-text">storage</div>
+				<div class="overlay-text">virtualization</div>
+				<div class="overlay-text">scrums</div>
+				<div class="overlay-text">sprints</div>
+				<div class="overlay-text">wins</div>
+				<div class="overlay-text">adoption</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
